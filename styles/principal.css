@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+section
+{
+    margin: 100px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 99vh;
+    width: 180vh;
+    padding: 10px;
+    background: rgba(214, 159, 39, 0.658);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.048);
+    border-radius: 40px;   
+    font-family: 'Sniglet';
+}
+.content
+{
+    transform: translateX(1050px);
+    max-width: 300px;
+    box-shadow: 0 30px 30px rgba(228, 210, 51, 0.774);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.418);
+    border-left: 1px solid rgba(126, 126, 151, 0.493);
+    padding: 0px;
+    padding-left: 0px;
+}
+.content h1
+{
+    font-size: 2em;
+    color:  #d41e24;
+}
+.content p
+{
+    font-size: 1.2em;
+    color:  #d41e1e;
+}
+.content a
+{
+    display: inline-block;
+    padding: 15px 10px;
+    background: rgb(77, 53, 53);
+    color: #d41e24;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+.img 
+{
+    max-width: 500px;
+    animation: animate 2s linear infinite;
+ margin-right: 10%;
+}
+@keyframes animate
+{
+    0%, 100% 
+    {
+        transform: translateY(1px);
+    }
+    50% 
+    {
+        transform: translateY(50px);
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f1042493;
+    background: linear-gradient(to right, #f0ec02cb, #e71f3ac5);
+    font-family: "Lato", sans-serif;
+    display: flex;
+    margin: 0;
+  }
+
+  h1 {
+    letter-spacing: 3px;
+  }
+  
+  .card{
+    width: 250px;
+    height: 450px;
+    border-radius: 9px;
+    box-shadow: 1 2px 2px rgba(3, 237, 245, 0);
+    overflow: hidden;
+    margin:20px;
+    text-align: center;
+    transition: all 0.5s;
+    font-family: 'Bodoni Moda', serif;
+    color: rgba(255, 255, 255, 0.966);
+    background-color: rgba(250, 100, 73, 0.39);
+    font-size: 11px;
+  }
+  .card:hover
+{
+    transform: translateX(60%);
+}
+    
+    .card img{
+    width: 220px;
+    height: 220px;
+    }   
+    .card:hover .img1
+{
+    transform: rotateY(-180deg);
+}
+
+.card .datos .contenido
+{
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    flex-direction: table;
+}
+
+.card .datos .contenido h2
+{
+    color: var(--clr);
+    text-align: table;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.card .datos .contenido h2 span
+{
+    color: var(--clr);
+    font-size: 0.8em;
+}
+
+.wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 40px;  
+}
+
+/*Boton ir arriba*/
+#button-up
+{
+    width: 400px;
+    height: 400px;
+    background: #04c28f;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    color: rgb(252, 93, 93);
+    border-radius: 50%;
+    font-size: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(10);
+}
+#button-up:hover
+{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+    body {
+      margin: 100;
+      height: 10vh;
+      width: 100%;
+      display: grid;
+      place-items: self-start;
+  }
+ 
+  

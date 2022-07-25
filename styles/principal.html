@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>Pokémon</title>
+    <link rel="shortcut icon" href="/img/pokeball-opening-png.png">
+    <link rel="stylesheet" href="navegacion.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="principal.css">
+     <link rel="staylesheet" href=".html">
+
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li class="list" style="--clr:#2872ed">
+                <a href="./index.html">
+                    <span class="icono"><ion-icon name="play"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2872ed">
+                <a href="./pokedex.html">
+                    <span class="icono"><ion-icon name="card"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#2872ed">
+                <a href="./principal.html">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/squared-menu.png"/></ion-icon></span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+       </div>
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    
+    <script>
+        const list = document.querySelectorAll('.list'); 
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active')
+        } 
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink))
+    </script>
+
+    <section>
+        <div class="content">
+            <center> <h1>Bienvenido al juego Pokémon</h1>
+            <p>Querido hermano, he creado esta página para tí, con el fin de que puedas jugar 🕹️ a atrapar a tus pokemos favoritos. También, 
+                he dispuesto una sección en la que podrás ver las tarjetas de 150 pokemos con la información necesaria para que aprendas más sobre ellos 📖. 
+                He puesto mucho esfuerzo en este trabajo 🔥, espero que te guste mucho! 
+            </p>
+            <a href="./index.html">INICIAR</a></center>
+        </div>
+        <div class="img">
+            <img src="/img/139.png"> 
+        </div>
+    </section>
+ 
+</body>
+</html>
